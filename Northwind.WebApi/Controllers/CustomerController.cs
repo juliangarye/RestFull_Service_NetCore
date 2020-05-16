@@ -32,6 +32,7 @@ namespace Northwind.WebApi.Controllers
             return Ok(_logic.GetById(id));
         }
 
+
         [HttpGet]
         public IActionResult GetAll()
         {
