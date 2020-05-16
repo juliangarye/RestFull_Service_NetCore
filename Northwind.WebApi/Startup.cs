@@ -40,7 +40,7 @@ namespace Northwind.WebApi
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://localhost:4200", "https://northwindwebcoursejg.firebaseapp.com")
+                                      builder.WithOrigins("http://localhost:4200", "https://northwindwebcoursejg.firebaseapp.com", "https://northwind-net-core-1.azurewebsites.net")
                                       .AllowAnyHeader()
                                       .AllowAnyMethod();
                                   });
